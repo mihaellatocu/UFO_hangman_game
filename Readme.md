@@ -2,23 +2,21 @@
 
 **UFO** is a simple "Hangman" game where your goal is to save a person from an alien abduction by guessing the letters in a codeword.
 
-<pre style="color:">
 ```swift 
                     .                            
                     |                            
-                 .-\"^\"-.                       
-                /_....._\\                       
-            .-\"`         `\"-.                  
+                 .-"^"-.                       
+                /_....._\                       
+            .-"`         `"-.                  
            (  ooo  ooo  ooo  )                   
             '-.,_________,.-'    ,-----------.   
-                 /     \\        (  Send help! ) 
-                /   0   \\      / `-----------'  
-               /  --|--  \\    /                 
-              /     |     \\                     
-             /     / \\    \\                    
-            /               \\    
+                 /     \        (  Send help! ) 
+                /   0   \      / `-----------'  
+               /  --|--  \    /                 
+              /     |     \                     
+             /     / \     \                    
+            /               \    
 ```
-</pre>
 
 ***
 ##### Getting Started
