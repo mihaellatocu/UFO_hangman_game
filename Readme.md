@@ -1,7 +1,20 @@
 ## UFO: The Game
 
 UFO is a simple "Hangman" game where your goal is to save a person from an alien abduction by guessing the letters in a codeword.
-
+                    .                            
+                    |                            
+                 .-\"^\"-.                       
+                /_....._\\                       
+            .-\"`         `\"-.                  
+           (  ooo  ooo  ooo  )                   
+            '-.,_________,.-'    ,-----------.   
+                 /     \\        (  Send help! ) 
+                /   0   \\      / `-----------'  
+               /  --|--  \\    /                 
+              /     |     \\                     
+             /     / \\    \\                    
+            /               \\                  
+***
 ##### Getting Started
 
 To get started with UFO, follow these steps:
@@ -37,7 +50,6 @@ make run
 or
 
 ```
-make
 ./UFO
 ```
 
