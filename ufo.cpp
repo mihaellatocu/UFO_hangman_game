@@ -5,7 +5,11 @@
 
 std::string random_str()
 {
-  std::vector<std::string> words = {"MIHA", "ELA", "ANAMARIA", "ANTONIO", "REGINA" ,"ARINA", "GEORGE"};
+  std::vector<std::string> words = {"AIRPLANE", "BASKETBALL" ,"COMPUTER", "DOLPHIN", "ELEVATOR",
+   "FOREST", "GIRAFFE", "HAMBURGER", "ICECREAM", "JUPITER", "KITCHEN", "LANTERN",
+    "MOUNTAIN", "NOTEBOOK", "OPERA", "PAINTER", "QUEEN", "RAINBOW", "SUNFLOWER",
+     "TELEPHONE", "UNICORN", "VOLCANO", "WATERFALL", "XENOPHOBIA", "YELLOW", "ZEBRA",
+      "ADVENTURE", "BICYCLE", "CHEMISTRY", "DRAGONFLY"};
   srand(time(NULL));
   int nr = rand() % (words.size());  
   return (words[nr]);

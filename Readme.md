@@ -3,7 +3,7 @@
 **UFO** is a simple "Hangman" game where your goal is to save a person from an alien abduction by guessing the letters in a codeword.
 
 ```swift 
-$${\color{red}
+
                     .                            
                     |                            
                  .-"^"-.                       
@@ -17,7 +17,7 @@ $${\color{red}
               /     |     \                     
              /     / \     \                    
             /               \    
-}$$
+
 ```
 
 ***
@@ -26,7 +26,7 @@ $${\color{red}
 To get started with UFO, follow these steps:
 
 1. Clone the Repository
-First, clone the repository from GitHub:
+First, clone the repository from GitHub into the terminal:
 
 ```bash
 git clone git@github.com:mihaellatocu/UFO_hangman_game.git UFO
