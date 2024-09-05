@@ -17,15 +17,12 @@ $(OBJ_FOLDER)/%.o: %.cpp
 	@$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:
-	@$(RM) $(OBJ_FOLDER)
+	@$(RM) $(OBJ_FOLDER) $(NAME)
 
-fclean: clean
-	@$(RM) $(NAME)
-
-re: fclean all 
+re: clean all 
 
 
 run: $(NAME)
 	@./$(NAME)
 
-.PHONY: all clean fclean re run
+.PHONY: all clean re run

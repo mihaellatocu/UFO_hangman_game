@@ -60,15 +60,12 @@ or
 ```
 
 5. Clean Up
-To remove generated files and directories, use:
+To remove all generated files, executable and directories, use:
 
 ```bash
 make clean
 ```
-To remove the executable and all generated files:
-```bash
-make fclean
-```
+
 To clean and rebuild the project from scratch:
 ```bash
 make re
