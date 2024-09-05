@@ -23,6 +23,7 @@ void end_game(std::string answer, std::string  codeword)
   }
   else
   {
+    std::cout << "\nThe correct word was: " << M << codeword << std::endl;
     std::cout << W << "Oh no! The UFO just flew away with another person!\n" << RST;
     std::cout << C << ">>>>GAME OVER<<<<\n" RST;
   }

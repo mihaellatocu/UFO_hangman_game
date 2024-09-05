@@ -19,7 +19,7 @@ int main() {
 greet();
 std::string codeword = random_str();
 std::string answer = std::string(codeword.length(), '_');
-//std::cout << answer<<"\n";
+
 int misses = 0;
 std::vector<char> incorrect;
 bool guess = false;

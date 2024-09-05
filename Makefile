@@ -10,26 +10,22 @@ OBJ = $(SRC:%.cpp=$(OBJ_FOLDER)/%.o)
 all: $(NAME)
 
 $(NAME): $(OBJ) 
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJ) 
+	@$(CC) $(CFLAGS) -o $(NAME) $(OBJ) 
 
 $(OBJ_FOLDER)/%.o: %.cpp
-	mkdir -p $(OBJ_FOLDER)
-	$(CC) $(CFLAGS) -c $< -o $@
+	@mkdir -p $(OBJ_FOLDER)
+	@$(CC) $(CFLAGS) -c $< -o $@
 	
 clean:
-	$(RM) $(OBJ_FOLDER)
+	@$(RM) $(OBJ_FOLDER)
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all 
 
-install:
-	cd UFO
-	@echo "Compile.."
-	make
 
 run: $(NAME)
 	@./$(NAME)
 
-.PHONY: all clean fclean re install run
+.PHONY: all clean fclean re run
