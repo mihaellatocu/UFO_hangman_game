@@ -1,5 +1,13 @@
 ## UFO: The Game
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+
 **UFO** is a simple "Hangman" game where your goal is to save a person from an alien abduction by guessing the letters in a codeword.
 
 ```swift 
@@ -46,7 +54,7 @@ Compile the project using make:
 make
 ```
 
-4. ==Run the Game==  
+4. @@Run the Game@@  
 Execute the compiled game:
 
 ```bash
