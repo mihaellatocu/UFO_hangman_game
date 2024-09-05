@@ -46,7 +46,7 @@ Compile the project using make:
 make
 ```
 
-4. $${\color{red}RedRun the Game}$$   
+4. $${\color{red}Run \space the Game}$$   
 Execute the compiled game:
 
 ```bash
