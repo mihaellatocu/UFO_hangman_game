@@ -49,8 +49,8 @@ make
 4. **Run the Game**  
 Execute the compiled game:
 
-```
-<span style="color: blue;">make run</span>
+```markdown
+`highlighted` make run
 ```
 
 or
