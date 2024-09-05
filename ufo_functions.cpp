@@ -1,21 +1,31 @@
 #include <iostream>
 #include <vector>
+#include "ufo_functions.hpp"
+#include <cstring>
+
 
 // Define functions
 void greet()
 {
-  std::cout << "=============\n";
-  std::cout<< "UFO: The Game\n";
-  std::cout << "=============\n";
+  std::cout << Y "=============\n" RST;
+  std::cout<< M "UFO: The Game\n" RST;
+  std::cout << Y "=============\n" RST;
   std::cout<< "Instructions: save your friend from alien abduction by guessing the letters in the codeword.\n";
 }
 
 void end_game(std::string answer, std::string  codeword)
 {
   if (answer == codeword)
-    std::cout<<"Hooray! You saved the person and earned a medal of honor!\n";
+  {
+    std::cout << "The answer is: " << G << answer << std::endl;
+    std::cout<< M << "\U0001F600 Hooray! You saved the person and earned a medal of honor!\n" RST;
+    
+  }
   else
-    std::cout<<"Oh no! The UFO just flew away with another person!\n";
+  {
+    std::cout << W << "Oh no! The UFO just flew away with another person!\n" << RST;
+    std::cout << C << ">>>>GAME OVER<<<<\n" RST;
+  }
 }
 
 void display_status(std::vector<char> incorrect, std::string answer)
@@ -23,12 +33,12 @@ void display_status(std::vector<char> incorrect, std::string answer)
   std::cout << "\nIncorrect Guesses: ";
   for(char i: incorrect)
     std::cout << i << " ";
-  std::cout << "\n";
+  std::cout << "\n\n";
   std::cout << "Codeword:\n";
 
   for(char i: answer)
     std::cout << i << " ";
-  std::cout << "\n";
+  std::cout << "\n\n";
 
 }
 
@@ -37,7 +47,7 @@ void display_misses(int misses) {
 
   if (misses == 0 || misses == 1) {
 
-    std::cout << "                 .                            \n";
+    std::cout <<W"                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
     std::cout << "             /_....._\\                       \n";
@@ -48,13 +58,13 @@ void display_misses(int misses) {
     std::cout << "             /   0   \\      / `-----------'  \n";
     std::cout << "            /  --|--  \\    /                 \n";
     std::cout << "           /     |     \\                     \n";
-    std::cout << "          /     / \\     \\                   \n";
-    std::cout << "         /               \\                   \n";
+    std::cout << "          /     / \\    \\                    \n";
+    std::cout << "         /               \\                   \n" RST;
 
   }
   else if (misses == 2) {
 
-    std::cout << "                 .                            \n";
+    std::cout <<Y"                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
     std::cout << "             /_....._\\                       \n";
@@ -66,12 +76,12 @@ void display_misses(int misses) {
     std::cout << "            /    |    \\    /                 \n";
     std::cout << "           /    / \\    \\                    \n";
     std::cout << "          /             \\                    \n";
-    std::cout << "         /               \\                   \n";
+    std::cout << "         /               \\                   \n" RST;
 
   }
   else if (misses == 3) {
 
-    std::cout << "                 .                            \n";
+    std::cout <<Y"                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
     std::cout << "             /_....._\\                       \n";
@@ -83,12 +93,12 @@ void display_misses(int misses) {
     std::cout << "            /   / \\   \\    /                \n";
     std::cout << "           /           \\                     \n";
     std::cout << "          /             \\                    \n";
-    std::cout << "         /               \\                   \n";
+    std::cout << "         /               \\                   \n" RST;
 
   }
   else if (misses == 3) {
 
-    std::cout << "                 .                            \n";
+    std::cout << PINK "                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
     std::cout << "             /_....._\\                       \n";
@@ -100,12 +110,12 @@ void display_misses(int misses) {
     std::cout << "            /   / \\   \\    /                \n";
     std::cout << "           /           \\                     \n";
     std::cout << "          /             \\                    \n";
-    std::cout << "         /               \\                   \n";
+    std::cout << "         /               \\                   \n" RST;
 
   }
   else if (misses == 4) {
 
-    std::cout << "                 .                            \n";
+    std::cout << M "                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
     std::cout << "             /_....._\\                       \n";
@@ -117,12 +127,12 @@ void display_misses(int misses) {
     std::cout << "            /         \\    /                 \n";
     std::cout << "           /           \\                     \n";
     std::cout << "          /             \\                    \n";
-    std::cout << "         /               \\                   \n";
+    std::cout << "         /               \\                   \n" RST;
 
   }
   else if (misses == 5) {
 
-    std::cout << "                 .                            \n";
+    std::cout << SALMON "                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
     std::cout << "             /_....._\\                       \n";
@@ -134,12 +144,12 @@ void display_misses(int misses) {
     std::cout << "            /         \\    /                 \n";
     std::cout << "           /           \\                     \n";
     std::cout << "          /             \\                    \n";
-    std::cout << "         /               \\                   \n";
+    std::cout << "         /               \\                   \n" RST;
 
   }
   else if (misses == 6) {
 
-    std::cout << "                 .                            \n";
+    std::cout << RED "                 .                            \n";
     std::cout << "                 |                            \n";
     std::cout << "              .-\"^\"-.                       \n";
     std::cout << "             /_....._\\                       \n";
@@ -151,7 +161,7 @@ void display_misses(int misses) {
     std::cout << "            /         \\    /                 \n";
     std::cout << "           /           \\                     \n";
     std::cout << "          /             \\                    \n";
-    std::cout << "         /               \\                   \n";
+    std::cout << "         /               \\                   \n" RST;
 
   }
 
