@@ -13,36 +13,43 @@ git clone git@github.com:mihaellatocu/UFO_hangman_game.git UFO
 ```
 
 2. Navigate to the Project Directory
-
 Change into the project directory:
 
+```
 cd UFO
+```
 
 3. Build the Project
 Compile the project using make:
 
-```make
+```
+make
 ```
 
 4. Run the Game
 Execute the compiled game:
 
-```make run
+```
+make run
 ```
 
 or
 
-```make
+```
+make
 ./UFO
 ```
 
 5. Clean Up
 To remove generated files and directories, use:
-```make clean
+```
+make clean
 ```
 To remove the executable and all generated files:
-```make fclean
+```
+make fclean
 ```
 To clean and rebuild the project from scratch:
-```make re
+```
+make re
 ```

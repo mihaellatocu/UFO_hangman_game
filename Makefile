@@ -24,4 +24,12 @@ fclean: clean
 
 re: fclean all 
 
-.PHONY: all clean fclean re
+install:
+	cd UFO
+	@echo "Compile.."
+	make
+
+run: $(NAME)
+	@./$(NAME)
+
+.PHONY: all clean fclean re install run
