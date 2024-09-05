@@ -49,8 +49,8 @@ make
 4. **Run the Game**  
 Execute the compiled game:
 
-```bash
-make run
+```
+<span style="color: blue;">make run</span>
 ```
 
 or
