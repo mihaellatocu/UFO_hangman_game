@@ -66,7 +66,7 @@ To remove all generated files, executable and directories, use:
 make clean
 ```
 
-To clean and rebuild the project from scratch:
+   To clean and rebuild the project from scratch:
 ```bash
 make re
 ```
