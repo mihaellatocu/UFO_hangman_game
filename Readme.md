@@ -1,4 +1,5 @@
-UFO: The Game
+## UFO: The Game
+
 UFO is a simple "Hangman" game where your goal is to save a person from an alien abduction by guessing the letters in a codeword.
 
 Getting Started
