@@ -46,7 +46,7 @@ Compile the project using make:
 make
 ```
 
-4. **==Run the Game==**  
+4. ==Run the Game==  
 Execute the compiled game:
 
 ```bash
