@@ -2,9 +2,9 @@
 
 UFO is a simple "Hangman" game where your goal is to save a person from an alien abduction by guessing the letters in a codeword.
 
-Getting Started
-To get started with UFO, follow these steps:
+##### Getting Started
 
+To get started with UFO, follow these steps:
 
 1. Clone the Repository
 First, clone the repository from GitHub:
