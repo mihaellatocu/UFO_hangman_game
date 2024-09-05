@@ -23,30 +23,30 @@
 ***
 ##### Getting Started
 
-To get started with UFO, follow these steps:
+To get started with UFO, follow these steps:  
 
-1. Clone the Repository
+1. Clone the Repository  
 First, clone the repository from GitHub into the terminal:
 
 ```bash
 git clone git@github.com:mihaellatocu/UFO_hangman_game.git UFO
 ```
 
-2. Navigate to the Project Directory
+2. Navigate to the Project Directory  
 Change into the project directory:
 
 ```bash
 cd UFO
 ```
 
-3. Build the Project
+3. Build the Project  
 Compile the project using make:
 
 ```bash
 make
 ```
 
-4. Run the Game
+4. Run the Game  
 Execute the compiled game:
 
 ```bash
@@ -59,7 +59,7 @@ or
 ./UFO
 ```
 
-5. Clean Up
+5. Clean Up  
 To remove all generated files, executable and directories, use:
 
 ```bash
