@@ -17,14 +17,14 @@ void end_game(std::string answer, std::string codeword)
   if (answer == codeword)
   {
     std::cout << "The answer is: " << G << answer << std::endl;
-    std::cout << M << "\U0001F600 Hooray! You saved the person and earned a medal of honor!\n" RST;
+    std::cout << M << "\U0001F600 Hooray! You saved the person and earned a medal 🏅 of honor! 👏\n" RST;
   }
   else
   {
     std::cout << "\nThe correct word was: " << M << codeword << std::endl;
-    std::cout << W << "Oh no! The UFO just flew away with another person!\n"
+    std::cout << W << "😧 Oh no! The UFO 👽 just flew away with another person🧍!\n"
               << RST;
-    std::cout << C << ">>>>GAME OVER<<<<\n" RST;
+    std::cout << C << ">>>> 🏁GAME OVER 🏁 <<<<\n" RST;
   }
 }
 
