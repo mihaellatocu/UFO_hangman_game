@@ -1,6 +1,6 @@
 NAME = UFO
-CC = c++
-CFLAGS = -Wall -Wextra -Werror
+CC = c++ 
+CFLAGS = -Wall -Wextra -Werror -std=c++11
 SRC = ufo_functions.cpp ufo.cpp
 OBJ_FOLDER = ./obj
 RM = rm -rf
